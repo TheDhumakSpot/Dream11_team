@@ -1,0 +1,2078 @@
+2023-05-18 15:23:18,168:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-05-18 15:23:18,169:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-05-18 15:23:18,169:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-05-18 15:23:18,169:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-05-18 15:23:33,900:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-05-18 15:24:02,450:INFO:PyCaret ClassificationExperiment
+2023-05-18 15:24:02,452:INFO:Logging name: clf-default-name
+2023-05-18 15:24:02,452:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-05-18 15:24:02,452:INFO:version 3.0.1
+2023-05-18 15:24:02,453:INFO:Initializing setup()
+2023-05-18 15:24:02,453:INFO:self.USI: 890b
+2023-05-18 15:24:02,453:INFO:self._variable_keys: {'X', 'log_plots_param', 'logging_param', 'pipeline', 'fold_shuffle_param', 'target_param', 'memory', 'html_param', 'is_multiclass', 'X_test', 'idx', '_available_plots', 'seed', 'gpu_n_jobs_param', '_ml_usecase', 'exp_name_log', 'USI', 'X_train', 'y', 'y_test', 'n_jobs_param', 'fold_groups_param', 'fold_generator', 'fix_imbalance', 'data', 'exp_id', 'y_train', 'gpu_param'}
+2023-05-18 15:24:02,454:INFO:Checking environment
+2023-05-18 15:24:02,454:INFO:python_version: 3.9.12
+2023-05-18 15:24:02,454:INFO:python_build: ('main', 'Apr  4 2022 05:22:27')
+2023-05-18 15:24:02,455:INFO:machine: AMD64
+2023-05-18 15:24:02,455:INFO:platform: Windows-10-10.0.17134-SP0
+2023-05-18 15:24:02,462:INFO:Memory: svmem(total=4175089664, available=1501503488, percent=64.0, used=2673586176, free=1501503488)
+2023-05-18 15:24:02,463:INFO:Physical Core: 2
+2023-05-18 15:24:02,465:INFO:Logical Core: 2
+2023-05-18 15:24:02,465:INFO:Checking libraries
+2023-05-18 15:24:02,465:INFO:System:
+2023-05-18 15:24:02,465:INFO:    python: 3.9.12 (main, Apr  4 2022, 05:22:27) [MSC v.1916 64 bit (AMD64)]
+2023-05-18 15:24:02,466:INFO:executable: C:\Users\HP\anaconda3\python.exe
+2023-05-18 15:24:02,466:INFO:   machine: Windows-10-10.0.17134-SP0
+2023-05-18 15:24:02,469:INFO:PyCaret required dependencies:
+2023-05-18 15:24:02,482:INFO:                 pip: 21.2.4
+2023-05-18 15:24:02,482:INFO:          setuptools: 61.2.0
+2023-05-18 15:24:02,482:INFO:             pycaret: 3.0.1
+2023-05-18 15:24:02,482:INFO:             IPython: 8.2.0
+2023-05-18 15:24:02,482:INFO:          ipywidgets: 7.6.5
+2023-05-18 15:24:02,483:INFO:                tqdm: 4.64.0
+2023-05-18 15:24:02,483:INFO:               numpy: 1.21.5
+2023-05-18 15:24:02,485:INFO:              pandas: 1.4.2
+2023-05-18 15:24:02,486:INFO:              jinja2: 2.11.3
+2023-05-18 15:24:02,486:INFO:               scipy: 1.7.3
+2023-05-18 15:24:02,486:INFO:              joblib: 1.2.0
+2023-05-18 15:24:02,487:INFO:             sklearn: 1.0.2
+2023-05-18 15:24:02,487:INFO:                pyod: 1.0.9
+2023-05-18 15:24:02,487:INFO:            imblearn: 0.10.1
+2023-05-18 15:24:02,487:INFO:   category_encoders: 2.6.1
+2023-05-18 15:24:02,487:INFO:            lightgbm: 3.3.5
+2023-05-18 15:24:02,487:INFO:               numba: 0.55.1
+2023-05-18 15:24:02,488:INFO:            requests: 2.27.1
+2023-05-18 15:24:02,488:INFO:          matplotlib: 3.5.1
+2023-05-18 15:24:02,488:INFO:          scikitplot: 0.3.7
+2023-05-18 15:24:02,488:INFO:         yellowbrick: 1.5
+2023-05-18 15:24:02,488:INFO:              plotly: 5.6.0
+2023-05-18 15:24:02,488:INFO:             kaleido: 0.2.1
+2023-05-18 15:24:02,489:INFO:         statsmodels: 0.13.2
+2023-05-18 15:24:02,489:INFO:              sktime: 0.17.0
+2023-05-18 15:24:02,489:INFO:               tbats: 1.1.3
+2023-05-18 15:24:02,489:INFO:            pmdarima: 2.0.3
+2023-05-18 15:24:02,489:INFO:              psutil: 5.9.5
+2023-05-18 15:24:02,489:INFO:PyCaret optional dependencies:
+2023-05-18 15:24:02,541:INFO:                shap: 0.41.0
+2023-05-18 15:24:02,541:INFO:           interpret: Not installed
+2023-05-18 15:24:02,542:INFO:                umap: Not installed
+2023-05-18 15:24:02,542:INFO:    pandas_profiling: Not installed
+2023-05-18 15:24:02,542:INFO:  explainerdashboard: Not installed
+2023-05-18 15:24:02,542:INFO:             autoviz: Not installed
+2023-05-18 15:24:02,543:INFO:           fairlearn: Not installed
+2023-05-18 15:24:02,543:INFO:             xgboost: Not installed
+2023-05-18 15:24:02,543:INFO:            catboost: Not installed
+2023-05-18 15:24:02,543:INFO:              kmodes: Not installed
+2023-05-18 15:24:02,543:INFO:             mlxtend: Not installed
+2023-05-18 15:24:02,543:INFO:       statsforecast: Not installed
+2023-05-18 15:24:02,543:INFO:        tune_sklearn: Not installed
+2023-05-18 15:24:02,544:INFO:                 ray: Not installed
+2023-05-18 15:24:02,544:INFO:            hyperopt: Not installed
+2023-05-18 15:24:02,544:INFO:              optuna: Not installed
+2023-05-18 15:24:02,544:INFO:               skopt: Not installed
+2023-05-18 15:24:02,544:INFO:              mlflow: Not installed
+2023-05-18 15:24:02,544:INFO:              gradio: Not installed
+2023-05-18 15:24:02,544:INFO:             fastapi: Not installed
+2023-05-18 15:24:02,544:INFO:             uvicorn: Not installed
+2023-05-18 15:24:02,545:INFO:              m2cgen: Not installed
+2023-05-18 15:24:02,545:INFO:           evidently: Not installed
+2023-05-18 15:24:02,545:INFO:               fugue: Not installed
+2023-05-18 15:24:02,545:INFO:           streamlit: Not installed
+2023-05-18 15:24:02,545:INFO:             prophet: Not installed
+2023-05-18 15:24:02,545:INFO:None
+2023-05-18 15:24:02,545:INFO:Set up data.
+2023-05-18 15:24:02,562:INFO:Set up train/test split.
+2023-05-18 15:24:02,609:INFO:Set up index.
+2023-05-18 15:24:02,610:INFO:Set up folding strategy.
+2023-05-18 15:24:02,610:INFO:Assigning column types.
+2023-05-18 15:24:02,622:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-05-18 15:24:02,883:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-05-18 15:24:02,911:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-05-18 15:24:03,200:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-18 15:24:03,797:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-18 15:24:03,973:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-05-18 15:24:03,976:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-05-18 15:24:04,082:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-18 15:24:04,083:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-18 15:24:04,084:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-05-18 15:24:04,256:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-05-18 15:24:04,362:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-18 15:24:04,363:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-18 15:24:04,537:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-05-18 15:24:04,643:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-18 15:24:04,644:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-18 15:24:04,645:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2023-05-18 15:24:04,938:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-18 15:24:04,939:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-18 15:24:05,222:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-18 15:24:05,223:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-18 15:24:05,250:INFO:Preparing preprocessing pipeline...
+2023-05-18 15:24:05,265:INFO:Set up label encoding.
+2023-05-18 15:24:05,266:INFO:Set up simple imputation.
+2023-05-18 15:24:05,273:INFO:Set up encoding of categorical features.
+2023-05-18 15:24:05,571:INFO:Finished creating preprocessing pipeline.
+2023-05-18 15:24:05,618:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\HP\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None, include=[],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              missing_values=nan,
+                                                              strategy='...
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent',
+                                                              verbose=0))),
+                ('onehot_encoding',
+                 TransformerWrapper(exclude=None, include=['Role'],
+                                    transformer=OneHotEncoder(cols=['Role'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              return_df=True,
+                                                              use_cat_names=True,
+                                                              verbose=0)))],
+         verbose=False)
+2023-05-18 15:24:05,618:INFO:Creating final display dataframe.
+2023-05-18 15:24:06,347:INFO:Setup _display_container:                     Description  \
+0                    Session id   
+1                        Target   
+2                   Target type   
+3                Target mapping   
+4           Original data shape   
+5        Transformed data shape   
+6   Transformed train set shape   
+7    Transformed test set shape   
+8          Categorical features   
+9                    Preprocess   
+10              Imputation type   
+11           Numeric imputation   
+12       Categorical imputation   
+13     Maximum one-hot encoding   
+14              Encoding method   
+15               Fold Generator   
+16                  Fold Number   
+17                     CPU Jobs   
+18                      Use GPU   
+19               Log Experiment   
+20              Experiment Name   
+21                          USI   
+
+                                                Value  
+0                                                1416  
+1                                             Credits  
+2                                          Multiclass  
+3   4.0: 0, 4.5: 1, 5.0: 2, 5.5: 3, 6.0: 4, 6.5: 5...  
+4                                            (243, 4)  
+5                                            (243, 7)  
+6                                            (170, 7)  
+7                                             (73, 7)  
+8                                                   1  
+9                                                True  
+10                                             simple  
+11                                               mean  
+12                                               mode  
+13                                                 25  
+14                                               None  
+15                                    StratifiedKFold  
+16                                                 10  
+17                                                 -1  
+18                                              False  
+19                                              False  
+20                                   clf-default-name  
+21                                               890b  
+2023-05-18 15:24:06,695:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-18 15:24:06,696:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-18 15:24:06,978:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-18 15:24:06,979:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-05-18 15:24:06,981:INFO:setup() successfully completed in 6.97s...............
+2023-05-18 15:26:21,302:INFO:Initializing compare_models()
+2023-05-18 15:26:21,302:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, include=None, fold=None, round=4, cross_validation=True, sort=Accuracy, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'Accuracy', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>}, exclude=None)
+2023-05-18 15:26:21,302:INFO:Checking exceptions
+2023-05-18 15:26:21,312:INFO:Preparing display monitor
+2023-05-18 15:26:21,599:INFO:Initializing Logistic Regression
+2023-05-18 15:26:21,601:INFO:Total runtime is 3.332694371541341e-05 minutes
+2023-05-18 15:26:21,623:INFO:SubProcess create_model() called ==================================
+2023-05-18 15:26:21,625:INFO:Initializing create_model()
+2023-05-18 15:26:21,626:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=lr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:21,626:INFO:Checking exceptions
+2023-05-18 15:26:21,627:INFO:Importing libraries
+2023-05-18 15:26:21,627:INFO:Copying training dataset
+2023-05-18 15:26:21,660:INFO:Defining folds
+2023-05-18 15:26:21,660:INFO:Declaring metric variables
+2023-05-18 15:26:21,675:INFO:Importing untrained model
+2023-05-18 15:26:21,708:INFO:Logistic Regression Imported successfully
+2023-05-18 15:26:21,748:INFO:Starting cross validation
+2023-05-18 15:26:21,753:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:21,823:WARNING:create_model() for lr raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-05-18 15:26:21,883:WARNING:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:21,884:INFO:Initializing create_model()
+2023-05-18 15:26:21,884:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=lr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:21,884:INFO:Checking exceptions
+2023-05-18 15:26:21,885:INFO:Importing libraries
+2023-05-18 15:26:21,885:INFO:Copying training dataset
+2023-05-18 15:26:21,903:INFO:Defining folds
+2023-05-18 15:26:21,904:INFO:Declaring metric variables
+2023-05-18 15:26:21,918:INFO:Importing untrained model
+2023-05-18 15:26:21,973:INFO:Logistic Regression Imported successfully
+2023-05-18 15:26:22,010:INFO:Starting cross validation
+2023-05-18 15:26:22,021:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:22,028:ERROR:create_model() for lr raised an exception or returned all 0.0:
+2023-05-18 15:26:22,038:ERROR:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 808, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:24,268:INFO:Initializing K Neighbors Classifier
+2023-05-18 15:26:24,268:INFO:Total runtime is 0.04447788794835408 minutes
+2023-05-18 15:26:24,282:INFO:SubProcess create_model() called ==================================
+2023-05-18 15:26:24,284:INFO:Initializing create_model()
+2023-05-18 15:26:24,285:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=knn, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:24,285:INFO:Checking exceptions
+2023-05-18 15:26:24,285:INFO:Importing libraries
+2023-05-18 15:26:24,286:INFO:Copying training dataset
+2023-05-18 15:26:24,316:INFO:Defining folds
+2023-05-18 15:26:24,316:INFO:Declaring metric variables
+2023-05-18 15:26:24,332:INFO:Importing untrained model
+2023-05-18 15:26:24,374:INFO:K Neighbors Classifier Imported successfully
+2023-05-18 15:26:24,421:INFO:Starting cross validation
+2023-05-18 15:26:24,468:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:24,475:WARNING:create_model() for knn raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-05-18 15:26:24,478:WARNING:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:24,479:INFO:Initializing create_model()
+2023-05-18 15:26:24,480:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=knn, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:24,480:INFO:Checking exceptions
+2023-05-18 15:26:24,480:INFO:Importing libraries
+2023-05-18 15:26:24,480:INFO:Copying training dataset
+2023-05-18 15:26:24,519:INFO:Defining folds
+2023-05-18 15:26:24,520:INFO:Declaring metric variables
+2023-05-18 15:26:24,547:INFO:Importing untrained model
+2023-05-18 15:26:24,577:INFO:K Neighbors Classifier Imported successfully
+2023-05-18 15:26:24,613:INFO:Starting cross validation
+2023-05-18 15:26:24,653:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:24,660:ERROR:create_model() for knn raised an exception or returned all 0.0:
+2023-05-18 15:26:24,663:ERROR:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 808, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:26,230:INFO:Initializing Naive Bayes
+2023-05-18 15:26:26,230:INFO:Total runtime is 0.0771861712137858 minutes
+2023-05-18 15:26:26,255:INFO:SubProcess create_model() called ==================================
+2023-05-18 15:26:26,256:INFO:Initializing create_model()
+2023-05-18 15:26:26,256:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=nb, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:26,257:INFO:Checking exceptions
+2023-05-18 15:26:26,259:INFO:Importing libraries
+2023-05-18 15:26:26,260:INFO:Copying training dataset
+2023-05-18 15:26:26,325:INFO:Defining folds
+2023-05-18 15:26:26,326:INFO:Declaring metric variables
+2023-05-18 15:26:26,356:INFO:Importing untrained model
+2023-05-18 15:26:26,380:INFO:Naive Bayes Imported successfully
+2023-05-18 15:26:26,443:INFO:Starting cross validation
+2023-05-18 15:26:26,448:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:26,459:WARNING:create_model() for nb raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-05-18 15:26:26,510:WARNING:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:26,512:INFO:Initializing create_model()
+2023-05-18 15:26:26,512:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=nb, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:26,512:INFO:Checking exceptions
+2023-05-18 15:26:26,513:INFO:Importing libraries
+2023-05-18 15:26:26,513:INFO:Copying training dataset
+2023-05-18 15:26:26,564:INFO:Defining folds
+2023-05-18 15:26:26,564:INFO:Declaring metric variables
+2023-05-18 15:26:26,596:INFO:Importing untrained model
+2023-05-18 15:26:26,677:INFO:Naive Bayes Imported successfully
+2023-05-18 15:26:26,792:INFO:Starting cross validation
+2023-05-18 15:26:26,797:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:26,814:ERROR:create_model() for nb raised an exception or returned all 0.0:
+2023-05-18 15:26:26,823:ERROR:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 808, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:29,589:INFO:Initializing Decision Tree Classifier
+2023-05-18 15:26:29,593:INFO:Total runtime is 0.13318367004394532 minutes
+2023-05-18 15:26:29,616:INFO:SubProcess create_model() called ==================================
+2023-05-18 15:26:29,620:INFO:Initializing create_model()
+2023-05-18 15:26:29,621:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=dt, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:29,622:INFO:Checking exceptions
+2023-05-18 15:26:29,622:INFO:Importing libraries
+2023-05-18 15:26:29,622:INFO:Copying training dataset
+2023-05-18 15:26:29,696:INFO:Defining folds
+2023-05-18 15:26:29,697:INFO:Declaring metric variables
+2023-05-18 15:26:29,732:INFO:Importing untrained model
+2023-05-18 15:26:29,759:INFO:Decision Tree Classifier Imported successfully
+2023-05-18 15:26:29,803:INFO:Starting cross validation
+2023-05-18 15:26:29,809:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:29,816:WARNING:create_model() for dt raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-05-18 15:26:29,819:WARNING:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:29,821:INFO:Initializing create_model()
+2023-05-18 15:26:29,821:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=dt, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:29,821:INFO:Checking exceptions
+2023-05-18 15:26:29,822:INFO:Importing libraries
+2023-05-18 15:26:29,822:INFO:Copying training dataset
+2023-05-18 15:26:29,844:INFO:Defining folds
+2023-05-18 15:26:29,844:INFO:Declaring metric variables
+2023-05-18 15:26:29,863:INFO:Importing untrained model
+2023-05-18 15:26:29,880:INFO:Decision Tree Classifier Imported successfully
+2023-05-18 15:26:29,917:INFO:Starting cross validation
+2023-05-18 15:26:29,922:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:29,930:ERROR:create_model() for dt raised an exception or returned all 0.0:
+2023-05-18 15:26:29,934:ERROR:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 808, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:31,098:INFO:Initializing SVM - Linear Kernel
+2023-05-18 15:26:31,098:INFO:Total runtime is 0.15832332770029706 minutes
+2023-05-18 15:26:31,110:INFO:SubProcess create_model() called ==================================
+2023-05-18 15:26:31,111:INFO:Initializing create_model()
+2023-05-18 15:26:31,111:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=svm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:31,112:INFO:Checking exceptions
+2023-05-18 15:26:31,113:INFO:Importing libraries
+2023-05-18 15:26:31,113:INFO:Copying training dataset
+2023-05-18 15:26:31,136:INFO:Defining folds
+2023-05-18 15:26:31,137:INFO:Declaring metric variables
+2023-05-18 15:26:31,156:INFO:Importing untrained model
+2023-05-18 15:26:31,174:INFO:SVM - Linear Kernel Imported successfully
+2023-05-18 15:26:31,208:INFO:Starting cross validation
+2023-05-18 15:26:31,213:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:31,223:WARNING:create_model() for svm raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-05-18 15:26:31,225:WARNING:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:31,227:INFO:Initializing create_model()
+2023-05-18 15:26:31,227:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=svm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:31,228:INFO:Checking exceptions
+2023-05-18 15:26:31,228:INFO:Importing libraries
+2023-05-18 15:26:31,228:INFO:Copying training dataset
+2023-05-18 15:26:31,253:INFO:Defining folds
+2023-05-18 15:26:31,254:INFO:Declaring metric variables
+2023-05-18 15:26:31,271:INFO:Importing untrained model
+2023-05-18 15:26:31,287:INFO:SVM - Linear Kernel Imported successfully
+2023-05-18 15:26:31,320:INFO:Starting cross validation
+2023-05-18 15:26:31,328:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:31,336:ERROR:create_model() for svm raised an exception or returned all 0.0:
+2023-05-18 15:26:31,339:ERROR:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 808, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:32,736:INFO:Initializing Ridge Classifier
+2023-05-18 15:26:32,737:INFO:Total runtime is 0.18561360836029056 minutes
+2023-05-18 15:26:32,760:INFO:SubProcess create_model() called ==================================
+2023-05-18 15:26:32,761:INFO:Initializing create_model()
+2023-05-18 15:26:32,763:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=ridge, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:32,763:INFO:Checking exceptions
+2023-05-18 15:26:32,763:INFO:Importing libraries
+2023-05-18 15:26:32,764:INFO:Copying training dataset
+2023-05-18 15:26:32,795:INFO:Defining folds
+2023-05-18 15:26:32,796:INFO:Declaring metric variables
+2023-05-18 15:26:32,829:INFO:Importing untrained model
+2023-05-18 15:26:32,857:INFO:Ridge Classifier Imported successfully
+2023-05-18 15:26:32,909:INFO:Starting cross validation
+2023-05-18 15:26:32,915:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:32,927:WARNING:create_model() for ridge raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-05-18 15:26:32,933:WARNING:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:32,936:INFO:Initializing create_model()
+2023-05-18 15:26:32,936:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=ridge, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:32,936:INFO:Checking exceptions
+2023-05-18 15:26:32,937:INFO:Importing libraries
+2023-05-18 15:26:32,937:INFO:Copying training dataset
+2023-05-18 15:26:32,985:INFO:Defining folds
+2023-05-18 15:26:32,987:INFO:Declaring metric variables
+2023-05-18 15:26:33,005:INFO:Importing untrained model
+2023-05-18 15:26:33,024:INFO:Ridge Classifier Imported successfully
+2023-05-18 15:26:33,093:INFO:Starting cross validation
+2023-05-18 15:26:33,097:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:33,110:ERROR:create_model() for ridge raised an exception or returned all 0.0:
+2023-05-18 15:26:33,113:ERROR:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 808, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:34,566:INFO:Initializing Random Forest Classifier
+2023-05-18 15:26:34,567:INFO:Total runtime is 0.21613792578379315 minutes
+2023-05-18 15:26:34,579:INFO:SubProcess create_model() called ==================================
+2023-05-18 15:26:34,580:INFO:Initializing create_model()
+2023-05-18 15:26:34,581:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=rf, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:34,582:INFO:Checking exceptions
+2023-05-18 15:26:34,582:INFO:Importing libraries
+2023-05-18 15:26:34,582:INFO:Copying training dataset
+2023-05-18 15:26:34,603:INFO:Defining folds
+2023-05-18 15:26:34,603:INFO:Declaring metric variables
+2023-05-18 15:26:34,620:INFO:Importing untrained model
+2023-05-18 15:26:34,634:INFO:Random Forest Classifier Imported successfully
+2023-05-18 15:26:34,662:INFO:Starting cross validation
+2023-05-18 15:26:34,667:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:34,675:WARNING:create_model() for rf raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-05-18 15:26:34,677:WARNING:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:34,678:INFO:Initializing create_model()
+2023-05-18 15:26:34,679:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=rf, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:34,679:INFO:Checking exceptions
+2023-05-18 15:26:34,679:INFO:Importing libraries
+2023-05-18 15:26:34,680:INFO:Copying training dataset
+2023-05-18 15:26:34,692:INFO:Defining folds
+2023-05-18 15:26:34,692:INFO:Declaring metric variables
+2023-05-18 15:26:34,704:INFO:Importing untrained model
+2023-05-18 15:26:34,718:INFO:Random Forest Classifier Imported successfully
+2023-05-18 15:26:34,756:INFO:Starting cross validation
+2023-05-18 15:26:34,760:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:34,768:ERROR:create_model() for rf raised an exception or returned all 0.0:
+2023-05-18 15:26:34,772:ERROR:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 808, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:35,743:INFO:Initializing Quadratic Discriminant Analysis
+2023-05-18 15:26:35,743:INFO:Total runtime is 0.23572628100713094 minutes
+2023-05-18 15:26:35,756:INFO:SubProcess create_model() called ==================================
+2023-05-18 15:26:35,757:INFO:Initializing create_model()
+2023-05-18 15:26:35,757:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=qda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:35,757:INFO:Checking exceptions
+2023-05-18 15:26:35,759:INFO:Importing libraries
+2023-05-18 15:26:35,759:INFO:Copying training dataset
+2023-05-18 15:26:35,773:INFO:Defining folds
+2023-05-18 15:26:35,774:INFO:Declaring metric variables
+2023-05-18 15:26:35,785:INFO:Importing untrained model
+2023-05-18 15:26:35,798:INFO:Quadratic Discriminant Analysis Imported successfully
+2023-05-18 15:26:35,837:INFO:Starting cross validation
+2023-05-18 15:26:35,841:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:35,849:WARNING:create_model() for qda raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-05-18 15:26:35,851:WARNING:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:35,852:INFO:Initializing create_model()
+2023-05-18 15:26:35,852:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=qda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:35,852:INFO:Checking exceptions
+2023-05-18 15:26:35,853:INFO:Importing libraries
+2023-05-18 15:26:35,853:INFO:Copying training dataset
+2023-05-18 15:26:35,864:INFO:Defining folds
+2023-05-18 15:26:35,864:INFO:Declaring metric variables
+2023-05-18 15:26:35,875:INFO:Importing untrained model
+2023-05-18 15:26:35,888:INFO:Quadratic Discriminant Analysis Imported successfully
+2023-05-18 15:26:35,925:INFO:Starting cross validation
+2023-05-18 15:26:35,929:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:35,936:ERROR:create_model() for qda raised an exception or returned all 0.0:
+2023-05-18 15:26:35,940:ERROR:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 808, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:36,930:INFO:Initializing Ada Boost Classifier
+2023-05-18 15:26:36,930:INFO:Total runtime is 0.25551457007726036 minutes
+2023-05-18 15:26:36,941:INFO:SubProcess create_model() called ==================================
+2023-05-18 15:26:36,942:INFO:Initializing create_model()
+2023-05-18 15:26:36,942:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=ada, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:36,942:INFO:Checking exceptions
+2023-05-18 15:26:36,943:INFO:Importing libraries
+2023-05-18 15:26:36,943:INFO:Copying training dataset
+2023-05-18 15:26:36,962:INFO:Defining folds
+2023-05-18 15:26:36,962:INFO:Declaring metric variables
+2023-05-18 15:26:36,977:INFO:Importing untrained model
+2023-05-18 15:26:36,992:INFO:Ada Boost Classifier Imported successfully
+2023-05-18 15:26:37,020:INFO:Starting cross validation
+2023-05-18 15:26:37,024:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:37,033:WARNING:create_model() for ada raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-05-18 15:26:37,035:WARNING:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:37,036:INFO:Initializing create_model()
+2023-05-18 15:26:37,037:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=ada, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:37,037:INFO:Checking exceptions
+2023-05-18 15:26:37,037:INFO:Importing libraries
+2023-05-18 15:26:37,038:INFO:Copying training dataset
+2023-05-18 15:26:37,049:INFO:Defining folds
+2023-05-18 15:26:37,050:INFO:Declaring metric variables
+2023-05-18 15:26:37,061:INFO:Importing untrained model
+2023-05-18 15:26:37,074:INFO:Ada Boost Classifier Imported successfully
+2023-05-18 15:26:37,111:INFO:Starting cross validation
+2023-05-18 15:26:37,116:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:37,124:ERROR:create_model() for ada raised an exception or returned all 0.0:
+2023-05-18 15:26:37,127:ERROR:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 808, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:38,864:INFO:Initializing Gradient Boosting Classifier
+2023-05-18 15:26:38,864:INFO:Total runtime is 0.28775602976481124 minutes
+2023-05-18 15:26:38,903:INFO:SubProcess create_model() called ==================================
+2023-05-18 15:26:38,905:INFO:Initializing create_model()
+2023-05-18 15:26:38,907:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=gbc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:38,908:INFO:Checking exceptions
+2023-05-18 15:26:38,909:INFO:Importing libraries
+2023-05-18 15:26:38,910:INFO:Copying training dataset
+2023-05-18 15:26:38,940:INFO:Defining folds
+2023-05-18 15:26:38,941:INFO:Declaring metric variables
+2023-05-18 15:26:38,963:INFO:Importing untrained model
+2023-05-18 15:26:38,998:INFO:Gradient Boosting Classifier Imported successfully
+2023-05-18 15:26:39,085:INFO:Starting cross validation
+2023-05-18 15:26:39,092:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:39,100:WARNING:create_model() for gbc raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-05-18 15:26:39,102:WARNING:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:39,104:INFO:Initializing create_model()
+2023-05-18 15:26:39,107:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=gbc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:39,108:INFO:Checking exceptions
+2023-05-18 15:26:39,109:INFO:Importing libraries
+2023-05-18 15:26:39,109:INFO:Copying training dataset
+2023-05-18 15:26:39,132:INFO:Defining folds
+2023-05-18 15:26:39,133:INFO:Declaring metric variables
+2023-05-18 15:26:39,159:INFO:Importing untrained model
+2023-05-18 15:26:39,178:INFO:Gradient Boosting Classifier Imported successfully
+2023-05-18 15:26:39,222:INFO:Starting cross validation
+2023-05-18 15:26:39,225:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:39,239:ERROR:create_model() for gbc raised an exception or returned all 0.0:
+2023-05-18 15:26:39,243:ERROR:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 808, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:40,803:INFO:Initializing Linear Discriminant Analysis
+2023-05-18 15:26:40,803:INFO:Total runtime is 0.3200641949971517 minutes
+2023-05-18 15:26:40,814:INFO:SubProcess create_model() called ==================================
+2023-05-18 15:26:40,815:INFO:Initializing create_model()
+2023-05-18 15:26:40,815:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=lda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:40,817:INFO:Checking exceptions
+2023-05-18 15:26:40,818:INFO:Importing libraries
+2023-05-18 15:26:40,818:INFO:Copying training dataset
+2023-05-18 15:26:40,866:INFO:Defining folds
+2023-05-18 15:26:40,866:INFO:Declaring metric variables
+2023-05-18 15:26:40,893:INFO:Importing untrained model
+2023-05-18 15:26:40,916:INFO:Linear Discriminant Analysis Imported successfully
+2023-05-18 15:26:40,963:INFO:Starting cross validation
+2023-05-18 15:26:40,979:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:40,989:WARNING:create_model() for lda raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-05-18 15:26:40,991:WARNING:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:40,992:INFO:Initializing create_model()
+2023-05-18 15:26:40,993:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=lda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:40,993:INFO:Checking exceptions
+2023-05-18 15:26:40,993:INFO:Importing libraries
+2023-05-18 15:26:40,994:INFO:Copying training dataset
+2023-05-18 15:26:41,019:INFO:Defining folds
+2023-05-18 15:26:41,019:INFO:Declaring metric variables
+2023-05-18 15:26:41,036:INFO:Importing untrained model
+2023-05-18 15:26:41,051:INFO:Linear Discriminant Analysis Imported successfully
+2023-05-18 15:26:41,110:INFO:Starting cross validation
+2023-05-18 15:26:41,115:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:41,125:ERROR:create_model() for lda raised an exception or returned all 0.0:
+2023-05-18 15:26:41,129:ERROR:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 808, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:42,146:INFO:Initializing Extra Trees Classifier
+2023-05-18 15:26:42,146:INFO:Total runtime is 0.3424531737963359 minutes
+2023-05-18 15:26:42,157:INFO:SubProcess create_model() called ==================================
+2023-05-18 15:26:42,158:INFO:Initializing create_model()
+2023-05-18 15:26:42,158:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=et, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:42,159:INFO:Checking exceptions
+2023-05-18 15:26:42,160:INFO:Importing libraries
+2023-05-18 15:26:42,160:INFO:Copying training dataset
+2023-05-18 15:26:42,195:INFO:Defining folds
+2023-05-18 15:26:42,196:INFO:Declaring metric variables
+2023-05-18 15:26:42,221:INFO:Importing untrained model
+2023-05-18 15:26:42,239:INFO:Extra Trees Classifier Imported successfully
+2023-05-18 15:26:42,289:INFO:Starting cross validation
+2023-05-18 15:26:42,294:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:42,305:WARNING:create_model() for et raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-05-18 15:26:42,307:WARNING:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:42,309:INFO:Initializing create_model()
+2023-05-18 15:26:42,309:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=et, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:42,309:INFO:Checking exceptions
+2023-05-18 15:26:42,310:INFO:Importing libraries
+2023-05-18 15:26:42,310:INFO:Copying training dataset
+2023-05-18 15:26:42,342:INFO:Defining folds
+2023-05-18 15:26:42,343:INFO:Declaring metric variables
+2023-05-18 15:26:42,362:INFO:Importing untrained model
+2023-05-18 15:26:42,385:INFO:Extra Trees Classifier Imported successfully
+2023-05-18 15:26:42,435:INFO:Starting cross validation
+2023-05-18 15:26:42,439:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:42,447:ERROR:create_model() for et raised an exception or returned all 0.0:
+2023-05-18 15:26:42,451:ERROR:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 808, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:43,477:INFO:Initializing Light Gradient Boosting Machine
+2023-05-18 15:26:43,477:INFO:Total runtime is 0.3646254340807597 minutes
+2023-05-18 15:26:43,490:INFO:SubProcess create_model() called ==================================
+2023-05-18 15:26:43,492:INFO:Initializing create_model()
+2023-05-18 15:26:43,492:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=lightgbm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:43,493:INFO:Checking exceptions
+2023-05-18 15:26:43,493:INFO:Importing libraries
+2023-05-18 15:26:43,493:INFO:Copying training dataset
+2023-05-18 15:26:43,524:INFO:Defining folds
+2023-05-18 15:26:43,525:INFO:Declaring metric variables
+2023-05-18 15:26:43,544:INFO:Importing untrained model
+2023-05-18 15:26:43,565:INFO:Light Gradient Boosting Machine Imported successfully
+2023-05-18 15:26:43,613:INFO:Starting cross validation
+2023-05-18 15:26:43,620:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:43,631:WARNING:create_model() for lightgbm raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-05-18 15:26:43,633:WARNING:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:43,635:INFO:Initializing create_model()
+2023-05-18 15:26:43,636:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=lightgbm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:43,636:INFO:Checking exceptions
+2023-05-18 15:26:43,636:INFO:Importing libraries
+2023-05-18 15:26:43,636:INFO:Copying training dataset
+2023-05-18 15:26:43,658:INFO:Defining folds
+2023-05-18 15:26:43,659:INFO:Declaring metric variables
+2023-05-18 15:26:43,672:INFO:Importing untrained model
+2023-05-18 15:26:43,692:INFO:Light Gradient Boosting Machine Imported successfully
+2023-05-18 15:26:43,731:INFO:Starting cross validation
+2023-05-18 15:26:43,736:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:43,755:ERROR:create_model() for lightgbm raised an exception or returned all 0.0:
+2023-05-18 15:26:43,759:ERROR:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 808, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:44,726:INFO:Initializing Dummy Classifier
+2023-05-18 15:26:44,726:INFO:Total runtime is 0.3854473908742269 minutes
+2023-05-18 15:26:44,739:INFO:SubProcess create_model() called ==================================
+2023-05-18 15:26:44,740:INFO:Initializing create_model()
+2023-05-18 15:26:44,740:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=dummy, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:44,741:INFO:Checking exceptions
+2023-05-18 15:26:44,741:INFO:Importing libraries
+2023-05-18 15:26:44,742:INFO:Copying training dataset
+2023-05-18 15:26:44,780:INFO:Defining folds
+2023-05-18 15:26:44,781:INFO:Declaring metric variables
+2023-05-18 15:26:44,798:INFO:Importing untrained model
+2023-05-18 15:26:44,837:INFO:Dummy Classifier Imported successfully
+2023-05-18 15:26:44,899:INFO:Starting cross validation
+2023-05-18 15:26:44,905:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:44,912:WARNING:create_model() for dummy raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-05-18 15:26:44,916:WARNING:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:44,919:INFO:Initializing create_model()
+2023-05-18 15:26:44,920:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=dummy, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000236807A0AF0>, model_only=True, return_train_score=False, kwargs={})
+2023-05-18 15:26:44,920:INFO:Checking exceptions
+2023-05-18 15:26:44,920:INFO:Importing libraries
+2023-05-18 15:26:44,920:INFO:Copying training dataset
+2023-05-18 15:26:44,933:INFO:Defining folds
+2023-05-18 15:26:44,936:INFO:Declaring metric variables
+2023-05-18 15:26:44,958:INFO:Importing untrained model
+2023-05-18 15:26:44,985:INFO:Dummy Classifier Imported successfully
+2023-05-18 15:26:45,019:INFO:Starting cross validation
+2023-05-18 15:26:45,023:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-05-18 15:26:45,029:ERROR:create_model() for dummy raised an exception or returned all 0.0:
+2023-05-18 15:26:45,033:ERROR:Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 792, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 862, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "C:\Users\HP\anaconda3\lib\queue.py", line 168, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 808, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1519, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\HP\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1114, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 1085, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "C:\Users\HP\anaconda3\lib\site-packages\joblib\parallel.py", line 873, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 267, in <genexpr>
+    results = parallel(
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 340, in split
+    for train, test in super().split(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 86, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 709, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\HP\anaconda3\lib\site-packages\sklearn\model_selection\_split.py", line 652, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous' instead.
+
+2023-05-18 15:26:46,038:INFO:_master_model_container: 0
+2023-05-18 15:26:46,039:INFO:_display_container: 2
+2023-05-18 15:26:46,039:INFO:[]
+2023-05-18 15:26:46,039:INFO:compare_models() successfully completed......................................
+2023-05-18 15:26:54,929:INFO:Initializing predict_model()
+2023-05-18 15:26:54,930:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000236805DCD90>, estimator=[], probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000236F953BCA0>)
+2023-05-18 15:26:54,930:INFO:Checking exceptions
+2023-05-18 15:26:54,930:INFO:Preloading libraries
+2023-05-18 15:26:54,938:INFO:Set up data.
+2023-05-18 15:26:54,959:INFO:Set up index.
